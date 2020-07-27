@@ -24,7 +24,7 @@ namespace API
       services.AddControllers();
       services.AddDbContext<StoreContext>(options =>
           options.UseSqlite(_configuration.GetConnectionString("DefaultConnection")));
-
+      
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

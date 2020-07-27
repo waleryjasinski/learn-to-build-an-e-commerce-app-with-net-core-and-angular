@@ -24,3 +24,6 @@ dotnet sln add .\Infrastructure\
 
 dotnet watch run 
 
+
+dotnet ef  migrations add Init  -o .\Data\Migrations
+dotnet ef database update
