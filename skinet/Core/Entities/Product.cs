@@ -1,5 +1,4 @@
-// using Microsoft
-namespace API.Entities
+namespace Core.Entities
 {
   public class Product
   {

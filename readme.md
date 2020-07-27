@@ -21,9 +21,13 @@ dotnet new classlib -o Infrastructure
 
 dotnet sln add .\Core\
 dotnet sln add .\Infrastructure\
+dotnet add reference ..\Core\
 
 dotnet watch run 
 
 
 dotnet ef  migrations add Init  -o .\Data\Migrations
 dotnet ef database update
+
+
+Postman 
