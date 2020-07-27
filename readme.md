@@ -23,3 +23,4 @@ dotnet sln add .\Core\
 dotnet sln add .\Infrastructure\
 
 dotnet watch run 
+
