@@ -39,3 +39,9 @@ dotnet ef migrations add InitialCreate -p .\Infrastructure\ -s .\API\ -o Data/Mi
 
 dotnet ef database update
 
+![Generic repository pattern ](Img/image10.png)
+![Generic repository pattern ](Img/image11.png)
+![Generic repository pattern ](Img/image12.png)
+![Generic repository pattern ](Img/image13.png)
+![Generic repository pattern ](Img/image14.png)
+![Generic repository pattern ](Img/image15.png)
