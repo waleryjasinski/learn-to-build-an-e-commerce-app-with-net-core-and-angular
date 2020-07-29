@@ -39,4 +39,3 @@ dotnet ef migrations add InitialCreate -p .\Infrastructure\ -s .\API\ -o Data/Mi
 
 dotnet ef database update
 
-GenericRepository
