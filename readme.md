@@ -44,8 +44,12 @@ dotnet ef database update
 ![Generic repository pattern ](Img/image12.png)
 ![Generic repository pattern ](Img/image13.png)
 ![Generic repository pattern ](Img/image14.png)
-![Generic repository pattern ](Img/image15.png)
+
 
 git add .
 git commit -m "enf of section 4"
 git push origin master 
+
+
+![Generic repository pattern ](Img/image15.png)
+![Generic repository pattern ](Img/image16.png)
