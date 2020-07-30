@@ -9,7 +9,7 @@ namespace API.Helpers
     public MappingProfiles()
     {
       CreateMap<Product, ProductToReturnDto>()
-        .ForMember(d => d.PictureUrl, o => o.MapFrom(s => $"https://localhost:5001/{s.PictureUrl}"));
+        .ForMember(d => d.PictureUrl, o => o.MapFrom<ProductUrlResolver>());
     }
   }
 }
