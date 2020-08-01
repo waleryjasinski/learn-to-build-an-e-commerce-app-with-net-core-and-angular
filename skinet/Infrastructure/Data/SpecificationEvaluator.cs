@@ -20,6 +20,17 @@ namespace Infrastructure.Data
                 query.Where(spec.Criteria); // p => p.ProductTypeId == id
               }
 
+
+              if (spec.OrderBy != null )
+              {
+                query.OrderBy(spec.OrderBy);
+              }
+
+              if (spec.OrderByDescending != null )
+              {
+                query.OrderByDescending(spec.OrderByDescending);
+              }              
+
               // .Include(p => p.ProductType)
               // .Include(p => p.ProductBrand)
               query = spec.Includes.Aggregate(query, (current, include) => current.Include(include));
