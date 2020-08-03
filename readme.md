@@ -53,3 +53,12 @@ git push origin master
 
 ![Generic repository pattern ](Img/image15.png)
 ![Generic repository pattern ](Img/image16.png)
+
+
+git clone https://github.com/waleryjasinski/Skinet.git
+
+
+ng new client 
+routing Y 
+SCSS
+ng serve
