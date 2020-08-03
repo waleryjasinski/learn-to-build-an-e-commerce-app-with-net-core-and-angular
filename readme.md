@@ -62,3 +62,8 @@ ng new client
 routing Y 
 SCSS
 ng serve
+
+
+ngx-bootstrap 
+https://valor-software.com/ngx-bootstrap/#/
+ng add ngx-bootstrap 

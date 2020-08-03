@@ -351,3 +351,4 @@ MigrationBackup/
 # Project 
 appsettings.json
 *.db
+ssl/
