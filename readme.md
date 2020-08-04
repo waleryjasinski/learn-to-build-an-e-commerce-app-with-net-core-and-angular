@@ -67,3 +67,14 @@ ng serve
 ngx-bootstrap 
 https://valor-software.com/ngx-bootstrap/#/
 ng add ngx-bootstrap 
+
+npm install font-awesome
+
+
+
+ng g m core  
+ng g m shop    
+cd 
+ng g c shop --flat --skip-tests 
+ng g s shop --flat --skip-tests 
+ng g m shop-routing --flat
