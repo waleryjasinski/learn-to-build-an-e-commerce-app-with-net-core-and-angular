@@ -1,5 +1,70 @@
-<ul>
+<!-- <ul>
     <li class="list-unstyled" *ngFor="let product of products">
         {{product.name}}
     </li>
-</ul>
+</ul> -->
+
+
+<div class="container">
+    <div class="row">
+
+
+        <section class="col-3">
+
+            <h5 class="text-warning ml-3">Sort</h5>
+            <select class="custom-select mb-3" (change)="onSortSelected($event.target.value)">
+                <!-- <option *ngFor="let sort of sortOptions" [value]="sort.value">
+                    {{sort.name}}
+                </option> -->
+                <option selected value="">Alfabetyczny </option>
+            </select>
+
+            <h5 class="text-warning ml-3 my-3"> Brands</h5>
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action active">
+                    Cras justo odio
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+                <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+                <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+                <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1"
+                    aria-disabled="true">Vestibulum at eros</a>
+            </div>
+
+            <h5 class="text-warning ml-3"> Types</h5>
+            <div class="list-group my-3">
+                <a href="#" class="list-group-item list-group-item-action active">
+                    Cras justo odio
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+                <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+                <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+                <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1"
+                    aria-disabled="true">Vestibulum at eros</a>
+            </div>
+        </section>
+
+
+
+        <section class="col-9">
+            <div class="d-flex justify-content-between align-items-center pb-2">
+                <header>
+                    <span>Showing <strong>10</strong> of <strong>15</strong> results </span>
+                </header>
+                <div class="form-inline mt-2">
+                    <input (keyup.enter)="onSearch()" class="form-control mr-2" #search style="width: 300px" placeholder="Search" type="text">
+                    <button (click)="onSearch()" class="btn btn-outline-primary my-2">Search</button>
+                    <button (click)="onReset()" class="btn btn-outline-success ml-2 my-2">Reset</button>
+                </div>                
+
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-4" *ngFor="let item of products">
+                    <app-product-item [product]="item"></app-product-item>
+                </div>                
+            </div>
+        </section>
+    </div>
+</div>
